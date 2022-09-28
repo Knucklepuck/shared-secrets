@@ -96,4 +96,3 @@
       document.getElementById("counter").style.color = "#C40233";
     }
   }
-

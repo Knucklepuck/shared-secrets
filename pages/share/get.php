@@ -22,12 +22,13 @@
   </noscript>
 
   <form role="form" action="/<?= html(SECRET_URI) ?><?= (PLAIN_PARAM) ? "?plain" : "" ?>" method="post">
-    <h1>Share a Secret:</h1>
+    <h1>Share a Secret</h1>
+    <p>Entire the secret you would like to share and click the button.</p>
     <div id="secret-div">
       <textarea autocomplete="off" class="form-control" id="secret" name="secret" rows="5" required="required"></textarea>
       <div id="counter"><?= MAX_PARAM_SIZE ?></div>
     </div>
-    <button type="submit" class="btn btn-default pull-right" id="share-secret-btn" name="share-secret-btn">Share the Secret!</button>
+    <button type="submit" class="btn btn-default" id="share-secret-btn" name="share-secret-btn">Share the Secret!</button>
   </form>
 
   <link href="/resources/css/share.css?<?= $cache_value ?>" integrity="sha256-EYu1Dc10IDi0yUOyV55YWmCKWfVlBj1rTMk/AsbViKE=" rel="stylesheet" type="text/css" />
@@ -44,7 +45,8 @@
 <?php
     }
   ?>
-  <script src="/resources/js/share.js?<?= $cache_value ?>" integrity="sha256-JgwhPbFEIzq89yXPJxa5NkZsH8F5MtkCsQ/5sHwU+gg=" type="text/javascript"></script>
+  <script src="/resources/js/share.js?<?= $cache_value ?>" integrity="sha256-PuW7cp6YZljGxqICj3wg/TVS1/uYxDr8+ATmF2QDmCk=" type="text/javascript"></script>
+  <script src="/resources/js/copy.js?ver=<?= $cache_value ?>" integrity="sha256-oW0vQgPpJqiq2l2XJGgpb4Nffmc9VsjjfcTQdKFiGD8=" type="text/javascript"></script>
 
 <?php
 

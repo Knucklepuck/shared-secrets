@@ -27,8 +27,8 @@
 
   <body>
     <div class="jumbotron text-center">
-      <h1><?php print(htmlentities(SERVICE_TITLE)); ?></h1>
-      <p>Paste a password, secret message or private link below.</p>
+      <h1><a href="/"><?php print(htmlentities(SERVICE_TITLE)); ?></a></h1>
+      <p>Paste a password, private link, or other secret message below.</p>
     </div>
 
     <div class="container">

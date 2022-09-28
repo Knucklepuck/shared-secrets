@@ -1,7 +1,8 @@
 <?php
-
   # prevent direct access
-  if (!defined("SYS11_SECRETS")) { die(""); }
+  if (!defined("SYS11_SECRETS")) {
+      die("");
+  }
 
   # define page title
   define("PAGE_TITLE", "Share a Secret.");
@@ -12,7 +13,7 @@
   # prevents cache hits with wrong CSS
   $cache_value = md5_file(__FILE__);
 
-?>
+  ?>
 
   <noscript>
     <div class="alert alert-warning">
@@ -40,20 +41,19 @@
 
   <script src="/resources/js/lib.js?<?= $cache_value ?>" integrity="sha256-TSNgGTWMqT8DICfF7UgTtxjnc/G935Ml4oxIQnHAxSM=" type="text/javascript"></script>
 <?php
-  if (defined("JUMBO_SECRETS") && JUMBO_SECRETS) {
-?>
+    if (defined("JUMBO_SECRETS") && JUMBO_SECRETS) {
+        ?>
   <script src="/resources/js/jumbo_limit.js?<?= $cache_value ?>" integrity="sha256-7OnyT9osWKeiIPJ7xJ8IF1UYF3c/rpy2+ku0sQ0oue4=" type="text/javascript"></script>
 <?php
-  } else {
-?>
+    } else {
+        ?>
   <script src="/resources/js/limit.js?<?= $cache_value ?>" integrity="sha256-HwcYaoqBBJhR7Y7eG2CepXkamos6C6SaViLGifuuo4E=" type="text/javascript"></script>
 <?php
-  }
-?>
-  <script src="/resources/js/share.js?<?= $cache_value ?>" integrity="sha256-JgwhPbFEIzq89yXPJxa5NkZsH8F5MtkCsQ/5sHwU+gg=" type="text/javascript"></script>
+    }
+  ?>
+  <script src="/resources/js/share.js?<?= $cache_value ?>" integrity="sha256-PuW7cp6YZljGxqICj3wg/TVS1/uYxDr8+ATmF2QDmCk=" type="text/javascript"></script>
 
 <?php
 
-  # include footer
-  require_once(ROOT_DIR."/template/footer.php");
-
+    # include footer
+    require_once(ROOT_DIR."/template/footer.php");

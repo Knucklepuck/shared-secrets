@@ -25,7 +25,7 @@
       if ((null !== $secret) && (false === $error)) {
           $secret = html($secret);
       } else {
-          $secret = "<strong>ERROR:</strong> ".html($error);
+          $secret = html($error);
       }
 
       # include header
@@ -42,14 +42,22 @@
     </div>
   </noscript>
 
-  <h1>Read a Secret:</h1>
-  <p><pre id="secret"><?= $secret ?></pre></p>
+<?php if ($error) : ?>
+    <h1>Error:</h1>
+    <p><pre id="secret"><?= $secret ?></pre></p>
+<?php else : ?>
+    <h1>Secret</h1>
+    <p>Warning: Be sure use have used this before closing the page, it can not be restored. You can also <a href="/">create a new secret</a>.</p>
+    <p><pre id="secret"><?= $secret ?></pre></p>
+    <button type="submit" class="btn btn-default" onclick="copyURL()">Copy to clipboard</button>
+<?php endif; ?>
 
   <link href="/resources/css/read.css?<?= $cache_value ?>" integrity="sha256-wgpxEGDMqG2EJxicZqc40OJMPwN8rBAZTYLdGyagQGw=" rel="stylesheet" type="text/css" />
 
   <script src="/resources/js/lib.js?<?= $cache_value ?>" integrity="sha256-TSNgGTWMqT8DICfF7UgTtxjnc/G935Ml4oxIQnHAxSM=" type="text/javascript"></script>
   <script src="/resources/js/read.js?<?= $cache_value ?>" integrity="sha256-0dlCa+2uL8Tgjq7VlZtajGikqq5BptgpEkQTc0xl1vU=" type="text/javascript"></script>
   <script src="/resources/js/norepost.js?<?= $cache_value ?>" integrity="sha256-SdShL5XtGY7DRT4OatFFRS1b3QdADS22I8eEP1GA/As=" type="text/javascript"></script>
+  <script src="/resources/js/copy.js?ver=<?= $cache_value ?>" integrity="sha256-oW0vQgPpJqiq2l2XJGgpb4Nffmc9VsjjfcTQdKFiGD8=" type="text/javascript"></script>
 
 <?php
 
