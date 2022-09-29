@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 75 75" xml:space="preserve" enable-background="new 0 0 75 75">
+	<style type="text/css">
+		.favicon-background{fill:#1397E8;}
+		.favicon-foreground{fill:#FFFFFF;}
+	</style>
+	<rect class="favicon-background" width="75" height="75"/>
+	<g>
+		<path class="favicon-foreground" d="M38.7 48.7H28.5L21.9 36l-2.7 1.7V49H9.9V15h9.2v14.7c0.9-1.5 1.8-2.8 2.7-4.4l7.1-10.2h10l-10.7 15C28.2 30 38.7 48.7 38.7 48.7z"/>
+		<path class="favicon-foreground" d="M62.7 25.7c-1.5-2.4-4.1-3.7-6.8-3.6 -2.8-0.1-5.3 1.4-6.9 3.8h-0.4l-1.2-3.3H40v33.9l8.9 3.5V50c0-1.4-0.1-2.7-0.3-3.8h0.5c1.7 2 4.1 3.2 6.6 3 2.7 0 5.5-1.4 6.8-3.7 1.8-3 2.7-6.5 2.6-10C65.4 32.1 64.5 28.8 62.7 25.7zM55.6 40.5C55.2 41.4 54.1 42 53 42c-1.2 0.1-2.1-0.5-2.8-1.5 -0.8-1.5-1-3.2-0.9-4.8v-0.8c0-1.5 0.3-2.8 0.9-4.2 0.4-0.9 1.7-1.5 2.7-1.4 1-0.1 2 0.4 2.7 1.4 0.6 1.5 0.9 3.2 0.8 4.8C56.5 37.3 56.2 39 55.6 40.5z"/>
+	</g>
+</svg>

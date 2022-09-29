@@ -58,10 +58,10 @@
     </div>
   </noscript>
   <? if ($error) : ?>
-    <h1>Secret Used</h1>
+    <h2>Secret Used</h2>
     <p>This secret has already been used, but you can <a href="/">create a new one</a>.</p>
   <?php else : ?>
-    <h1>Read Secret?</h1>
+    <h2>Read Secret?</h2>
     <p>This secret is ready, but you will only be able to read a secret once. If you're not ready to use this one-time link, do not click the button below.</p>
 
     <form role="form" action="/<?= html($encrypted_secret) ?><?= (PLAIN_PARAM) ? "?plain" : "" ?>" method="post">

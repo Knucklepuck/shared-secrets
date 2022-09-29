@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --ff-base: "Monserrat", sans-serif;
+  --fw-base: 400;
+  --fw-bold: 700;
+  --primary: #0f7abd;
+  --primary-dark: #0061A4;
+  --white: #fff;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 100%;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+
+h1, h2 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  font-weight: var(--fw-bold);
+}
+
+.container {
+  max-width: 50rem;
+}
+
+.jumbotron {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.jumbotron a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.jumbotron h1 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.jumbotron h1::before {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 1rem auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 90 90' style='enable-background:new 0 0 90 90;' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23fff' d='M46.878,63.372H30.054l-10.78-20.904l-4.41,2.613v18.291H0V8.5h14.864v23.843c0.817-1.47,2.287-3.756,4.574-7.022 L31.035,8.5h16.171L29.891,32.997L46.878,63.372L46.878,63.372z M74.156,64.026c-2.123,0-4.083-0.327-5.717-1.143 c-1.633-0.653-3.43-1.96-5.064-3.919h-0.653c0.327,1.796,0.49,5.389,0.49,6.043V81.5l-14.374-5.716V20.748h11.924l2.123,5.389 h0.653c2.777-4.083,6.534-6.206,11.27-6.206s8.33,1.96,11.107,5.879S90,35.12,90,41.815c0,6.859-1.47,12.248-4.247,16.168 C82.813,62.066,78.893,64.026,74.156,64.026L74.156,64.026z M69.256,31.527c-2.123,0-3.593,0.817-4.574,2.286 c-0.817,1.47-1.307,3.756-1.47,6.859v1.143c0,3.593,0.49,6.206,1.47,7.839c0.98,1.633,2.45,2.45,4.574,2.45 c1.797,0,3.267-0.817,4.083-2.45s1.307-4.246,1.307-8.002c0-3.593-0.49-6.206-1.307-7.839 C72.686,32.343,71.216,31.527,69.256,31.527z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 4rem 4rem;
+}
+
+@media (max-width: 767px) {
+  .jumbotron h1::before {
+    width: 6rem;
+    height: 6rem;
+    background-size: 3rem 3rem;
+  }
+}
+
+.jumbotron p {
+  font-weight: var(--fw-base);
+}
+
+@media (max-width: 767px) {
+  .jumbotron p {
+    font-size: 1rem;
+  }
+}
+
+.btn.btn-default {
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.btn.btn-default:hover {
+  background-color: var(--primary-dark);
+}
+
+.form-control {
+  margin-block: 1rem;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+pre {
+  margin-block: 1rem;
+  border-radius: 0;
+}
+
+#counter {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+/*# sourceMappingURL=style.css.map */

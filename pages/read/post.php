@@ -43,10 +43,10 @@
   </noscript>
 
 <?php if ($error) : ?>
-    <h1>Error:</h1>
+    <h2>Error:</h2>
     <p><pre id="secret"><?= $secret ?></pre></p>
 <?php else : ?>
-    <h1>Secret</h1>
+    <h2>Secret</h2>
     <p>Warning: Be sure use have used this before closing the page, it can not be restored. You can also <a href="/">create a new secret</a>.</p>
     <p><pre id="secret"><?= $secret ?></pre></p>
     <button type="submit" class="btn btn-default" onclick="copyURL()">Copy to clipboard</button>

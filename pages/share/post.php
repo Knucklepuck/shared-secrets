@@ -43,10 +43,10 @@
   </noscript>
 
 <?php if ($error) : ?>
-  <h1>Error:</h1>
+  <h2>Error:</h2>
   <p><pre id="secret"><?= $share_url ?></pre></p>
 <?php else : ?>
-  <h1>Share URL</h1>
+  <h2>Share URL</h2>
   <p>This unique web address will give one-time access to the secret you entered. You can also <a href="/">create a new secret</a>.</p>
   <p><pre id="secret"><?= $share_url ?></pre></p>
   <button type="submit" class="btn btn-default" onclick="copyURL()">Copy to clipboard</button>
