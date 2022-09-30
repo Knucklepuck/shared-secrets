@@ -23,7 +23,7 @@
 
   <form role="form" action="/<?= html(SECRET_URI) ?><?= (PLAIN_PARAM) ? "?plain" : "" ?>" method="post">
     <h2>Share a Secret</h2>
-    <p>Entire the secret you would like to share and click the button.</p>
+    <p>Enter the secret you would like to share and click the button.</p>
     <div id="secret-div">
       <textarea autocomplete="off" class="form-control" id="secret" name="secret" rows="5" required="required"></textarea>
       <div id="counter"><?= MAX_PARAM_SIZE ?></div>

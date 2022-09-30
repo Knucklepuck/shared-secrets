@@ -47,7 +47,7 @@
     <p><pre id="secret"><?= $secret ?></pre></p>
 <?php else : ?>
     <h2>Secret</h2>
-    <p>Warning: Be sure use have used this before closing the page, it can not be restored. You can also <a href="/">create a new secret</a>.</p>
+    <p>Warning: Be sure you have used this secret before closing the page, it can not be restored. You can also <a href="/">create a new secret</a>.</p>
     <p><pre id="secret"><?= $secret ?></pre></p>
     <button type="submit" class="btn btn-default" onclick="copyURL()">Copy to clipboard</button>
 <?php endif; ?>
